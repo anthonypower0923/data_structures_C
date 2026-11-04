@@ -11,6 +11,10 @@ int main(void){
    int a = 9;
    int b = 89;
    int c = 24;
+   Dya_Err_e e;
+   int *ptr;
+   e = dyarray_pop(arr, ptr);
+   printf("%s",dyarray_error_handler(e));
    dyarray_push(arr, &a);
    dyarray_push(arr, &b);
    dyarray_push(arr, &c);
